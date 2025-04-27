@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Notification</title>
+</head>
+<body>
+<h2>Dear Customer,</h2>
+<p>Your payment for credit {{.Credit.ID}} has been processed:</p>
+
+<ul>
+    <li>Amount: {{.Payment.Amount}} {{.Credit.Currency}}</li>
+    <li>Date: {{.Payment.PaidAt.Format "2006-01-02"}}</li>
+    <li>Status: {{.Payment.Status}}</li>
+</ul>
+
+<p>Thank you for using our services!</p>
+</body>
+</html>
